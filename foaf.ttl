@@ -1,1 +1,34 @@
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix ns0: <http://webns.net/mvcb/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
+<https://raw.githubusercontent.com/kblazeski/wbs-foaf/main/foaf.ttl>
+  a foaf:PersonalProfileDocument ;
+  foaf:maker <https://raw.githubusercontent.com/kblazeski/wbs-foaf/main/foaf.ttl#me> ;
+  foaf:primaryTopic <https://raw.githubusercontent.com/kblazeski/wbs-foaf/main/foaf.ttl#me> ;
+  ns0:generatorAgent <http://www.ldodds.com/foaf/foaf-a-matic> ;
+  ns0:errorReportsTo <mailto:leigh@ldodds.com> .
+
+<https://raw.githubusercontent.com/kblazeski/wbs-foaf/main/foaf.ttl#me>
+  a foaf:Person ;
+  foaf:name "Kiril Blazheski" ;
+  foaf:title "Mr" ;
+  foaf:givenname "Kiril" ;
+  foaf:family_name "Blazheski" ;
+  foaf:nick "Kire" ;
+  foaf:mbox_sha1sum "63d27e95941452a38e11df6781c5e06d87e2d8f9" ;
+  foaf:homepage <https://github.com/kblazeski> ;
+  foaf:phone <tel:071354521> ;
+  foaf:workplaceHomepage <https://raw.githubusercontent.com/kblazeski/wbs-foaf/main/www.finki.ukim.mk> ;
+  foaf:workInfoHomepage <https://raw.githubusercontent.com/kblazeski/wbs-foaf/main/www.finki.ukim.mk> ;
+  foaf:schoolHomepage <https://raw.githubusercontent.com/kblazeski/wbs-foaf/main/www.finki.ukim.mk> ;
+  foaf:knows [
+    a foaf:Person ;
+    foaf:name "Petar" ;
+    foaf:mbox_sha1sum "175a3aa77341f761c061fb567f66b1169dde9007"
+  ], [
+    a foaf:Person ;
+    foaf:name "Robert" ;
+    foaf:mbox_sha1sum "e7f239fc0bf87a784ee1157fd062997ff59f21a2" ;
+    rdfs:seeAlso <https://raw.githubusercontent.com/robert-ilievski/wbs-foaf/master/foaf.ttl>
+  ] .
